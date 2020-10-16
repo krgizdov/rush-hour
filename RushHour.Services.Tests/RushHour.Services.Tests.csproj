@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    <PackageReference Include="MockQueryable.Moq" Version="3.1.3" />
+    <PackageReference Include="Moq" Version="4.14.1" />
+    <PackageReference Include="xunit" Version="2.4.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
+    <PackageReference Include="coverlet.collector" Version="1.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RushHour.Data\RushHour.Data.csproj" />
+    <ProjectReference Include="..\RushHour.Domain.Services\RushHour.Domain.Services.csproj" />
+    <ProjectReference Include="..\RushHour.Domain\RushHour.Domain.csproj" />
+    <ProjectReference Include="..\RushHour\RushHour.csproj" />
+  </ItemGroup>
+
+</Project>

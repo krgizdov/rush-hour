@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.5.1" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RushHour.Data\RushHour.Data.csproj" />
+    <ProjectReference Include="..\RushHour.Domain\RushHour.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
